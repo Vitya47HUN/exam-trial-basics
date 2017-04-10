@@ -19,11 +19,15 @@ public class Cuboid {
   }
   public static void main(String[] args) {
 
-    System.out.println(getSurface(Numbers));
+    System.out.println(getSurface(new Numbers(1,2,3)));
   }
 
-  public static int getSurface(int l, int h, int b){
-    int surface = 2 * ((l * b) + (b * h) + (h * l));
+  public static int getSurface(Numbers nums){
+    int surface = 2 * ((nums.length * nums.breadth) + (nums.breadth * nums.height) + (nums.height * nums.length));
     return surface;
   }
+//  public static int getVolume(Numbers nums){
+//    int volume =
+//    return volume;
+//  }
 }
