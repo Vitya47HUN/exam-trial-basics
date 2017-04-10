@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class PirateCounter {
@@ -26,27 +25,23 @@ public class PirateCounter {
 
   public static void main(String... args) {
     ArrayList<Pirate> pirates = new ArrayList<>();
-
-    // Given this list...
-
     pirates.add(new Pirate("Olaf", false, 12));
     pirates.add(new Pirate("Uwe", true, 9));
     pirates.add(new Pirate("Jack", true, 16));
     pirates.add(new Pirate("Morgan", false, 17));
     pirates.add(new Pirate("Hook", true, 20));
 
-    // Write a function that takes any list that contains pirates as in the example,
-    // And returns a list of names containing the pirates that
-    // - have wooden leg and
-    // - have more than 15 gold
 
-    System.out.println(listSorter(pirates));
+    for (int k = 0;k < 2;k++){
+      System.out.println(listSorter(pirates).get(k).name);
+    }
+
   }
 
   public static ArrayList<Pirate> listSorter(List<Pirate> list) {
     ArrayList<Pirate> sortedList = new ArrayList<>();
     for (int i = 0; i < list.size(); i++) {
-      if (list.get(i).hasWoodenLeg == true && list.get(i).gold > 15){
+      if (list.get(i).hasWoodenLeg == true && list.get(i).gold > 15) {
         sortedList.add(list.get(i));
       }
     }
