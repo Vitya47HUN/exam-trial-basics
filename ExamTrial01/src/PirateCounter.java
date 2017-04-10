@@ -39,13 +39,14 @@ public class PirateCounter {
     // And returns a list of names containing the pirates that
     // - have wooden leg and
     // - have more than 15 gold
+
     System.out.println(listSorter(pirates));
   }
 
   public static ArrayList<Pirate> listSorter(List<Pirate> list) {
     ArrayList<Pirate> sortedList = new ArrayList<>();
     for (int i = 0; i < list.size(); i++) {
-      if (list.get(i).equals(false)){
+      if (list.get(i).hasWoodenLeg == true){
         sortedList.add(list.get(i));
       }
     }
