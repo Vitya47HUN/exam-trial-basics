@@ -1,7 +1,9 @@
+import com.sun.javafx.geom.PickRay;
+
 import java.lang.reflect.Array;
 import java.util.*;
 
-public class PirateCounter{
+public class PirateCounter {
 
   static class Pirate {
     String name;
@@ -15,7 +17,7 @@ public class PirateCounter{
     }
   }
 
-  public static void main(String... args){
+  public static void main(String... args) {
     ArrayList<Pirate> pirates = new ArrayList<>();
 
     // Given this list...
@@ -30,16 +32,15 @@ public class PirateCounter{
     // And returns a list of names containing the pirates that
     // - have wooden leg and
     // - have more than 15 gold
-
-    listSorter(pirates);
+    System.out.println(listSorter(pirates));
   }
+
+
   public static ArrayList<Pirate> listSorter(List<Pirate> list) {
     ArrayList<Pirate> sortedList = new ArrayList<>();
-    for (int i = 0; i < list.size();i++){
-      for (int j = 0; j < list.indexOf(i); j++)
-
-      if (list.indexOf(j) < 15){
-        sortedList.add(list.get(j));
+    for (int i = 0; i < list.size(); i++) {
+      if (list.contains(true)) {
+        sortedList.add(list.get(i));
       }
     }
     return sortedList;
