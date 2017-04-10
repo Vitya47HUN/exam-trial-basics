@@ -29,8 +29,9 @@ public class PirateCounter {
     pirates.add(new Pirate("Morgan", false, 17));
     pirates.add(new Pirate("Hook", true, 20));
 
-    for (int k = 0;k < 2;k++){
-      System.out.println(listSorter(pirates).get(k).name);
+    pirates = listSorter(pirates);
+    for (int k = 0;k < pirates.size();k++){
+      System.out.println(pirates.get(k).name);
     }
   }
   public static ArrayList<Pirate> listSorter(List<Pirate> list) {
