@@ -46,7 +46,7 @@ public class PirateCounter {
   public static ArrayList<Pirate> listSorter(List<Pirate> list) {
     ArrayList<Pirate> sortedList = new ArrayList<>();
     for (int i = 0; i < list.size(); i++) {
-      if (list.get(i).hasWoodenLeg == true){
+      if (list.get(i).hasWoodenLeg == true && list.get(i).gold > 15){
         sortedList.add(list.get(i));
       }
     }
