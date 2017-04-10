@@ -21,9 +21,8 @@ public class Seconds {
     List<Integer> readylist = new ArrayList<Integer>();
 
     for (int i = 0; i < list.size(); i++){
-      if (list.indexOf(i) % 2 != 0) {
+      if (list.indexOf(i) % 2 != 0 && list.indexOf(i) > 0) {
         readylist.add(i);
-
       }
     }
     return readylist;
