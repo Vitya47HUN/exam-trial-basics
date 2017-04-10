@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class CountAs {
   public static void main(String[] args) throws IOException {
-    BufferedReader reader = new BufferedReader(new FileReader("afile.txt"));
+    BufferedReader reader = new BufferedReader(new FileReader("C:/Greenfox/Vitya47HUN/exam-trial-basics/ExamTrial01/src/afile.txt"));
     int ch;
     char charToSearch='a';
     int counter=0;
@@ -21,9 +21,8 @@ public class CountAs {
       if(charToSearch == (char)ch) {
         counter++;
       }
-    };
+    }
     reader.close();
-
     System.out.println(counter);
 
   }
