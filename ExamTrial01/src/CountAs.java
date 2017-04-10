@@ -4,7 +4,6 @@ import java.io.IOException;
 
 public class CountAs {
   public static void main(String[] args) throws IOException {
-
     reader();
   }
 
@@ -19,6 +18,6 @@ public class CountAs {
       }
     }
     reader.close();
-    System.out.println(counter);
+    System.out.println("The numbers of 'a' letters in the text file are : " + counter);
   }
 }
