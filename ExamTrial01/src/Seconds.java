@@ -10,13 +10,12 @@ public class Seconds {
     mylist.add(4);
     mylist.add(5);
     System.out.println(listChanger(mylist));
-
   }
 
-  public static List<Integer> listChanger(List<Integer> list){
+  public static List<Integer> listChanger(List<Integer> list) {
     List<Integer> readylist = new ArrayList<Integer>();
 
-    for (int i = 0; i < list.size(); i++){
+    for (int i = 0; i < list.size(); i++) {
       if (list.indexOf(i) % 2 != 0 && list.indexOf(i) > 0) {
         readylist.add(i);
       }
